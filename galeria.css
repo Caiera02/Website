@@ -1,0 +1,149 @@
+*{
+padding: 1%;
+box-sizing: border-box;
+margin: 0;
+text-align: center;
+}
+
+header{
+
+width: 100%;
+height: 80px;
+
+background-color: #1e1e1d;
+box-shadow: 0 0 10px #1e1e1d;
+border: solid 1px black;
+
+display:  inline-block;
+
+}
+
+button{
+        width: 200px;
+        /* position: relative; */
+
+        
+        border-radius: 18px;
+        gap: 2rem 5rem ;
+        grid-template-columns: 1fr 1fr 1fr 1fr; 
+        
+        text-align: center;
+        font-size: medium;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+.text{
+        margin-top: 2%;
+        margin-bottom: 2%;
+        font-size: larger;
+        font-family: Verdana, Geneva, Tahoma, sans-serif, 'Arial Narrow Bold', sans-serif, Tahoma, Geneva, Verdana, sans-serif;
+        border-style: groove;
+        box-shadow: 1px 10px 20px black;
+}
+
+.boxes{
+        height: calc(100vh);
+        position: relative;
+
+        display: grid;
+        justify-content: flex-end; 
+        gap: 2rem 5rem;
+
+        grid-template-columns: 1fr 1fr 1fr; 
+
+        /* Aqui posso usar funÃ§Ã£o repeat( 2= a quantidade que vai se repetir, 1fr o valor de flex)*/
+                /*  grid-template-columns: 3fr repeat(2,1fr);  */
+        /* grid-template-rows: 1fr 2fr; */
+        /* grid-template-rows: minmax(150px, 10fr) 2fr; */
+
+}
+
+
+.box{
+        padding: 1.4rem;
+        border: 5.5px solid rgb(16, 15, 15);
+        border-radius: 1rem;
+        box-shadow: 10px 20px 10px;
+        /* background-color: rgb(172, 172, 207); */
+        /* color: rgb(22, 89, 148); */
+        color: black;
+        font-size: 4rem;
+
+        flex: 1;
+
+        display: flex;
+        /* gap: 0 2rem; */
+        justify-content: center;
+        align-content: center;
+
+}
+
+
+.box p{
+        font-size: 30%;
+        text-align: center;
+        
+}
+
+h1{
+        border-color: rgb(255, 0, 0);
+        border-style: dashed;    
+        border-radius: 20px;
+        text-align: center;
+        font-size: 30px;
+        color:rgba(95, 97, 55, 0.978);
+        box-shadow: 0px 0px 25px rgb(6, 146, 55);      
+}
+
+h2{     
+       
+        font-size: 25px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        margin-bottom: 0%;
+}
+
+
+img,video{
+        margin-top: 5%;
+        width: 100%;
+}
+
+.imgcenter{
+
+        height: 500px ;
+        margin-top: 20%;
+}
+
+
+
+/* mobile */
+@media only screen and (min-width: 300px) and (max-width:600px) {
+
+        header{
+                background-color: black;
+                box-shadow: black;
+                border-color: black;
+                border-radius: 10px;
+        }
+
+        button{
+                background-color: whitesmoke;
+        }
+        
+        [class*=boxes]{
+
+                display: inline;
+                
+        }
+        [class*=text]{
+                font-size: large;
+                border-style: double;
+                border-color: rgb(65, 151, 172);
+                box-shadow: 2px 10px 20px rgb(65, 151, 172);
+                margin-top: 6%;
+        }
+
+       
+
+}
